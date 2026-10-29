@@ -1,6 +1,7 @@
 # Registro individual — AV3
 
 Estudante: Gabriel Pedroza Rodrigues — Data: 28/10/2026 — Caminho: B (MiniLoja: B3)
+Pull request: https://github.com/GPedrozaR/repo_alunos_d12_esia_gabriel-pedroza/pull/1 (descrição em `avaliacoes/av3/descricao-pr-av3-gabriel_pedroza.md`)
 
 **Modo de interação usado e por quê (raio de impacto, oráculo, familiaridade):** modo plano primeiro, depois implementação em passos pequenos, com aprovação a cada passo. Raio de impacto baixo (sistema fictício em memória, uma regra), oráculo claro (R2.2 de `caso/regras.md`) e eu ainda não conhecia o código de estoque e pedidos. Planejar antes me deixou decidir o escopo e a forma da correção sem a IA editar nada. **Alternativa comparada:** pedir a correção direto ao agente. Descartei: sem plano ele tende a mexer em mais pontos (pagamento recusado, id temporário), e o diff ficaria difícil de revisar.
 
