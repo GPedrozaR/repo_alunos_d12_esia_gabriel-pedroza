@@ -19,6 +19,8 @@ class PedidoService:
         if not itens:
             raise ValueError("pedido sem itens")
         total = calcular_total(itens, cupom, uf)
+        # R2.2: confere todo o estoque antes de reservar, para não deixar reserva parcial.
+        self.estoque.verificar(itens)
         for i in itens:
             self.estoque.reservar(i["sku"], i["qtd"], pedido_id=f"tmp-{usuario_id}")
         cobranca = self.gateway.cobrar(total, token)
